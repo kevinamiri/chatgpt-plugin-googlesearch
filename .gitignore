@@ -1,13 +1,4 @@
 node_modules/
 dist/
-deploy.zip
-*.txt
-*.sql
-*.sqllite
 */.env
-prisma/*.db
-*.json
-*.sh
-*.bash
 .env
-downloads
