@@ -33,13 +33,13 @@ Google Search Integration for ChatGPT is a plugin that allows you to seamlessly 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/google-search-integration-chatgpt.git
+git clone https://github.com/yourusername/chatgpt-plugin-googlesearch.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd google-search-integration-chatgpt
+cd chatgpt-plugin-googlesearch
 ```
 
 3. Install dependencies:
