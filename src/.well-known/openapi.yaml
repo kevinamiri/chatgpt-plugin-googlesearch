@@ -1,0 +1,78 @@
+openapi: 3.0.3
+info:
+  title: Google Search Plugin API
+  description: An Express.js app that uses the Google Custom Search API to search the web.
+  version: 1.0.0
+
+servers:
+  - url: https://plugins.maila.ai
+paths:
+  /search:
+    get:
+      operationId: searchGet
+      summary: Search Google and fetch HTML content
+      description: Searches Google with the given query, returning search results and inner text from specific chunks array elements, initial 5, 11th-15th, and 21st-25th positions.
+      parameters:
+        - name: q
+          in: query
+          description: Search query
+          required: true
+          schema:
+            type: string
+          example: chatgpt
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+                          description: The title of the search result
+                        link:
+                          type: string
+                          format: uri
+                          description: The URL of the search result
+                        chunk_content:
+                          type: string
+                          description: A summary of the HTML content of the search result (available for the first five results)
+                example:
+                  results:
+                    - title: introducing ChatGPT
+                      link: https://openai.com/blog/chatgpt
+                      chunk_content: ChatGPT and GPT-3.5 were trained on an Azure AI supercomputing infrastructure. ChatGPT sometimes writes plausible-sounding but incorrect or nonsensical answers.
+                    - title: OpenAI
+                      link: https://openai.com
+                      chunk_content: Developing safe and beneficial AI requires people from a wide range of disciplines and backgrounds ...
+
+        "400":
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+                example:
+                  error: No query provided
+        "default":
+          description: Error fetching search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+                example:
+                  error: Error fetching search results
