@@ -6,6 +6,8 @@ A Typescript Express.js App
 
 Google Search Integration for ChatGPT is a plugin that allows you to seamlessly perform Google searches and retrieve information from search results directly within the ChatGPT environment. This enhances your ChatGPT experience by providing relevant information at your fingertips.
 
+[A comprehensive guide to creating chatGPT plugin using Nodejs](https://cookbook.maila.ai/en/guides/creating-a-chatgpt-plugin)
+
 **Requirements:**
 
 - Access to ChatGPT plugins
