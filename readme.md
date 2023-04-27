@@ -63,6 +63,7 @@ This project depends on **OpenAI plugins** and **Google Search API**. To set up 
 1. Read the documentation for both dependencies:
    - [OpenAI Documentation](https://platform.openai.com/docs/plugins/introduction)
    - [Google Search API Documentation](https://developers.google.com/custom-search/v1/introduction)
+   - [A comprehensive guide to creating chatGPT plugin using Nodejs](https://cookbook.maila.ai/en/guides/creating-a-chatgpt-plugin)
 
 2. Ensure you have proper authentication in place, as this example does not provide it.
 
