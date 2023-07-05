@@ -35,7 +35,7 @@ Google Search Integration for ChatGPT is a plugin that allows you to seamlessly 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/chatgpt-plugin-googlesearch.git
+git clone https://github.com/kevinamiri/chatgpt-plugin-googlesearch.git
 ```
 
 2. Navigate to the project directory:
@@ -51,6 +51,10 @@ npm install
 ```
 
 4. Start the Express server:
+
+```bash
+cd src
+```
 
 ```bash
 npx ts-node index.ts

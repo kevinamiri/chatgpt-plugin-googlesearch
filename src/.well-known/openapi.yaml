@@ -1,11 +1,10 @@
 openapi: 3.0.3
 info:
-  title: Google Search Plugin API
-  description: An Express.js app that uses the Google Custom Search API to search the web.
-  version: 1.0.0
+  title: Search and Fetch content
+  description: Searches Google with the given query, returning search results.
 
 servers:
-  - url: https://plugins.maila.ai
+  - url: https://subdomain.maila.ai
 paths:
   /search:
     get:

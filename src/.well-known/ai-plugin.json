@@ -2,17 +2,17 @@
     "schema_version": "v1",
     "name_for_model": "googleSearch",
     "name_for_human": "Google Search Plugin",
-    "description_for_model": "Plugin for searching using Google Custom Search Engine and fetching the inner text of the first link in the search results.",
+    "description_for_model": "Plugin for searching using Google Custom Search Engine and fetching the inner text of the first pages in the search results.",
     "description_for_human": "Search using Google Custom Search Engine.",
     "auth": {
         "type": "none"
     },
     "api": {
         "type": "openapi",
-        "url": "https://plugins.maila.ai/.well-known/openai.yaml",
+        "url": "https://your_subdomain.maila.ai/.well-known/openai.yaml",
         "has_user_authentication": false
     },
-    "logo_url": "https://plugins.maila.ai/.well-known/logo.png",
+    "logo_url": "https://your_subdomain.maila.ai/.well-known/logo.png",
     "contact_email": "kevin@maila.ai",
-    "legal_info_url": "https://plugins.maila.ai/legal"
+    "legal_info_url": "https://your_subdomain.maila.ai/legal"
 }
